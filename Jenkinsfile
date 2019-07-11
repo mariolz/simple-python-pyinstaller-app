@@ -3,7 +3,7 @@
     stages {
         stage('Build') {
             steps {
-                echo 'tstsuc'
+                sh 'ls -l ./'
             }
         }
     }
