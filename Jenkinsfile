@@ -11,10 +11,5 @@
                 sh 'tar -zcvf simple-python-pyinstaller-app.tar.gz /home/simple-python-pyinstaller-app'
             }
         }
-        stage('Deliver') {
-            steps {
-                sh 'scp'
-            }
-        }
     }
 }
