@@ -3,9 +3,18 @@
     stages {
         stage('Build') {
             steps {
-                sh 'cd /home'
+                sh 'rm -rf simple-python-pyinstaller-app.tar.gz'
+                sh 'cd simple-python-pyinstaller-app'
+                sh 'pwd'
+                sh 'git pull'
+                sh 'cd ../'
                 sh 'pwd'
                 sh 'tar -zcvf simple-python-pyinstaller-app.tar.gz /home/simple-python-pyinstaller-app'
+            }
+        }
+        stage('Deliver') {
+            steps {
+                sh 'scp'
             }
         }
     }
