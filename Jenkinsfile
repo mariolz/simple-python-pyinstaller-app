@@ -3,7 +3,7 @@
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/mariolz/simple-python-pyinstaller-app.git'
+                sh 'git clone https://github.com/mariolz/simple-python-pyinstaller-app.git'
             }
         }
     }
